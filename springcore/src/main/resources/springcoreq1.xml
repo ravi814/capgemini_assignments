@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans >
+
+   <bean id = "address" class = "springcoreq1.Address">
+      <property name = "street" value = "zyx"/>
+      <property name = "city" value = "chennai"/>
+      <property name = "state" value = "Tamil Nadu"/>
+      <property name = "zip" value = "536898"/>
+      <property name = "country" value = "India"/>
+   </bean>
+   
+   <bean id = "customer" class = "springcoreq1.Customer">
+   
+      <property name = "customerId" value = "01"/>
+      <property name = "customerName" value = "rams"/>
+      <property name = "customerContact" value = "9704653257"/>
+      <property name = "customerAddress" ref = "address"/>
+   </bean>
+
+</beans>
